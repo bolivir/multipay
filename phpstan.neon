@@ -1,0 +1,14 @@
+parameters:
+    # Paths to run analysis on
+    paths:
+        - src
+        - tests
+    # The level 8 is the highest level
+    level: 8
+    excludePaths:
+            analyse:
+                - src/Test.php
+
+includes:
+    # Baseline
+    - ./phpstan-baseline.neon
